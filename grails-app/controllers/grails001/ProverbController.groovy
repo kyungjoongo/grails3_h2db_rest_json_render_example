@@ -1,5 +1,6 @@
 package grails001
 
+import antlr.StringUtils
 import grails.converters.JSON
 import groovy.json.JsonSlurper
 
@@ -33,6 +34,21 @@ class ProverbController {
         println ('result-->'+ result.getContent()+"\n"+  result.getAuthor() );
 
         render result as JSON
+    }
+
+
+    def getOneByName(){
+
+        println (params.id);
+
+        Proverb result = Proverb.findByAuthor(params.id)
+
+
+        println ('result-->'+ result.getContent()+"\n"+  result.getAuthor() );
+        render result as JSON
+
+
+
     }
 
     def getTwo(){
