@@ -15,11 +15,13 @@ class UrlMappings {
 
         "/kyungjoon"(view:"/kyungjoon")
 
-        "/proverb/getOne/:id"
-
-        "/$id?" {
+        /*"/$id?" {
             controller = "proverb"
             action = "getOne"
-        }
+        }*/
+
+        "/proverb/getOne/$id?"
+
+        "/proverb/getTwo/$id?"
     }
 }

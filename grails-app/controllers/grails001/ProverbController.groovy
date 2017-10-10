@@ -28,8 +28,18 @@ class ProverbController {
 
     def getOne(){
 
-        def result = Proverb.findById(params.id)
+        Proverb result = Proverb.findById(params.id)
+
+        println ('result-->'+ result.getContent()+"\n"+  result.getAuthor() );
 
         render result as JSON
+    }
+
+    def getTwo(){
+
+        Proverb result = Proverb.findById(params.id)
+        print("param--->"+ params.id+ "\n");
+
+        render ( "고경준 천재님잇비니sdlfksdlfkdsf")
     }
 }
