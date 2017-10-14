@@ -4,17 +4,18 @@ class Proverb {
 
     String content
     String author
-    Date createDt
-    String etcs
 
 
     static constraints = {
 
         content(maxSize:  255 )
+        author(nullable: true)
+        version(nullable: true)
     }
 
     static mapping = {
 
         content type: 'text'
+
     }
 }

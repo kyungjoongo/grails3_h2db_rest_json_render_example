@@ -20,13 +20,16 @@ class UrlMappings {
             action = "getOne"
         }*/
 
-        "/proverb/getOne/$id?"
-
-/*        "/"( controller:"proverb", action:"getOneByName", param:"author" )*/
-
+     /*   "/proverb/getOne/$id?"
         "/proverb/getOneByName/$id?"
+        "/proverb/getTwo/$id?"*/
 
 
-        "/proverb/getTwo/$id?"
+
+        /*"/proverbJson/$id?"( controller:"proverbJson", action:"getOne" )*/
+
+        "/proverbJson/"( controller:"proverbJson", action:"index" )
+
+        "/proverbJson/byName/$id?"( controller:"proverbJson", action:"getOneByName" )
     }
 }

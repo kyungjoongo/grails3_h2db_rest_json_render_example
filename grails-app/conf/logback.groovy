@@ -22,15 +22,39 @@ appender('STDOUT', ConsoleAppender) {
     }
 }
 
+/*
+
+trace
+debug
+info
+warn
+error
+
+*/
+logger 'org.hibernate.type.descriptor.sql.BasicBinder', INFO, ['STDOUT']
+logger 'org.hibernate.SQL', INFO, ['STDOUT']
+
+
 def targetDir = BuildSettings.TARGET_DIR
-if (Environment.isDevelopmentMode() && targetDir != null) {
-    appender("FULL_STACKTRACE", FileAppender) {
-        file = "${targetDir}/stacktrace.log"
-        append = true
-        encoder(PatternLayoutEncoder) {
-            pattern = "%level %logger - %msg%n"
-        }
+
+//#######################################
+// 로그 셋팅 부분..........
+//########################################
+
+//def targetDir = '.'
+
+appender("FULL_STACKTRACE", FileAppender) {
+    //file = "${targetDir}/stacktrace.log"
+    file = "grails001_stacktrace.log"
+    append = true
+    encoder(PatternLayoutEncoder) {
+        pattern = "%level %logger - %msg%n"
     }
-    logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
 }
-root(ERROR, ['STDOUT'])
+
+//###############
+//로그 어펜더 세팅
+//###############
+logger("grails001", INFO, ['FULL_STACKTRACE'], true)
+
+root(INFO, ['STDOUT'])
