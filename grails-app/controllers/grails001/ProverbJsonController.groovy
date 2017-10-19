@@ -10,12 +10,13 @@ class ProverbJsonController {
 
     Logger logger = Logger.getLogger("");
 
+    /**
+     *
+     * @return
+     */
     def index(){
-
         def arrList = Proverb.getAll();
-
         logger.info ("I am a test info log")
-
         render arrList as JSON
 
     }

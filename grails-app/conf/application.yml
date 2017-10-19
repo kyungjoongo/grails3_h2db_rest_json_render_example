@@ -1,6 +1,12 @@
 ---
 
+
+
 grails:
+    controllers:
+        upload:
+            maxFileSize: 26214400
+            maxRequestSize: 26214400
     profile: web
     codegen:
         defaultPackage: grails001
@@ -127,6 +133,7 @@ datasource:
 ##################
 environments:
     development:
+        uploadFolder : "d:/upload/"
         dataSource:
             #dbCreate: create-drop
             dbCreate: update
@@ -145,6 +152,7 @@ environments:
             password: 1114
             url: jdbc:mysql://104.199.239.95:3306/grails001?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
     production:
+        uploadFolder : "./upload/"
         dataSource:
             dbCreate: update
             logSql: true

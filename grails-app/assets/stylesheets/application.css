@@ -13,3 +13,17 @@
 *= require mobile
 *= require_self
 */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins');
+
+
+
+.flower {
+/*    font-family: 'Poppins', sans-serif;*/
+    font-family: 'Indie Flower', cursive;
+}
+
+.Poppins {
+        font-family: 'Poppins', sans-serif;
+
+}
