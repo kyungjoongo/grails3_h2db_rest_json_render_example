@@ -59,10 +59,11 @@ String secret_key = 'PYItAd4J4p2ieEnMw4c-SJEc'--}%
 
                         var displayName = data.displayName;
 
-                        var emails = data.emails[0].value;
+                        var email = data.emails[0].value;
                         var image = data.image.url;
                         $("#username").val(displayName);
-                        $("#userid").val(emails);
+                        $("#email").val(email);
+                        $("#unique_id").val(data.id);
                         $("#picture").val(image);
 
 
@@ -98,8 +99,8 @@ String secret_key = 'PYItAd4J4p2ieEnMw4c-SJEc'--}%
 
     <div id="profileImg"></div>
     username : <input type="text" size="200" id="username"><br/>
-    userid : <input type="text" size="200" id="userid"><br/>
-    password : <input type="text" size="200" id="password"><br/>
+    email : <input type="text" size="200" id="email"><br/>
+    unique_id : <input type="text" size="200" id="unique_id"><br/>
     picture : <input type="text" size="200" id="picture"><br/>
 
 
