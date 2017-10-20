@@ -61,13 +61,19 @@ String secret_key = 'PYItAd4J4p2ieEnMw4c-SJEc'--}%
 
                         var email = data.emails[0].value;
                         var image = data.image.url;
-                        $("#username").val(displayName);
+                        /*$("#username").val(displayName);
                         $("#email").val(email);
                         $("#unique_id").val(data.id);
                         $("#picture").val(image);
+                        loadImage(image, 100, 100, '#profileImg');*/
 
 
-                        loadImage(image, 100, 100, '#profileImg');
+                        var _params = "username="+ displayName  + "&email="+ email + "&unique_id="+ data.id + "&picture="+ image
+
+
+                        location.href= "/user/callback2?"+ _params;
+
+
 
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
@@ -94,7 +100,7 @@ String secret_key = 'PYItAd4J4p2ieEnMw4c-SJEc'--}%
 <!DOCTYPE html>
 <html>
 <body>
-
+%{--
 <form action="https://www.googleapis.com/oauth2/v4/token" method="post" enctype="application/x-www-form-urlencoded">
 
     <div id="profileImg"></div>
@@ -106,7 +112,7 @@ String secret_key = 'PYItAd4J4p2ieEnMw4c-SJEc'--}%
 
 
     <input type="submit">
-</form>
+</form>--}%
 
 
 </body>
