@@ -68,7 +68,7 @@ label {
 scope=email%20profile&access_type=offline
 &include_granted_scopes=true&state=profile
 &redirect_uri=http://kyungjoon.ipdisk.co.kr:3000/user/callback&response_type=code&client_id=574875960059-mkh0uvtsbe200mtfs63b84kujj6tsj1v.apps.googleusercontent.com">
-                        <asset:image src="btn_google_signin_dark_focus_web.png"></asset:image>
+                        <asset:image src="btn_google_signin_dark_focus_web.png"  ></asset:image>
                     </a>
                 </td>
             </tr>
