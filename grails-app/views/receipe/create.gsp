@@ -6,29 +6,17 @@
     <title>Upload New Document</title>
 </head>
 
-<body>
+<body >
 <div class="nav" role="navigation">
-    <ul><li><g:link class="list" action="list">Document List</g:link></li></ul>
+    <ul><li><g:link class="list" style="font-family: 'Hanna'" action="list">레시피 리스트</g:link></li></ul>
 </div>
 
 <div class="content scaffold-create" role="main">
-    <h1>Upload New Document</h1>
+    <h1 style="font-family: 'Hanna'">레시피 입력</h1>
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
     <g:uploadForm action="upload">
-<style>
-
-/*@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins');
-
-
-
-.flower {
-    !*    font-family: 'Poppins', sans-serif;*!
-    font-family: 'Indie Flower', cursive;
-}*/
-</style>
-
         <table class="table Poppins">
             <tr>
                 <td>
@@ -75,7 +63,7 @@
 
 
         <fieldset class="buttons">
-            <g:submitButton name="upload" class="save" value="Upload"/>
+            <g:submitButton name="upload" class="save" value="래시피업로드!!"/>
         </fieldset>
     </g:uploadForm>
 </div>

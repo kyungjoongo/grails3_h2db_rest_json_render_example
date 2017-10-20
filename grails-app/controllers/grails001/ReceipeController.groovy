@@ -1,13 +1,12 @@
 package grails001
 
-import groovy.xml.streamingmarkupsupport.BaseMarkupBuilder
-
 class ReceipeController {
 
     static scaffold = Receipe
 
-    def create() {
 
+
+    def create() {
 
     }
 
@@ -25,30 +24,31 @@ class ReceipeController {
 
             def receipe = new Receipe(title: title, material: material, image: file.originalFilename, url: url)
             receipe.save()
+
             def fullPath = grailsApplication.config.uploadFolder + file.originalFilename
             file.transferTo(new File(fullPath))
         }
-        redirect(action: 'index')
+        redirect(action: 'list')
     }
 
-    def list(){
+    def list() {
 
 
         def arrList = Receipe.getAll();
 
-        println ("arrList--->"+ arrList.toString())
+        println("arrList--->" + arrList.toString())
 
         ['arrList': arrList]
     }
 
     def imageView() {
 
-        String image= params.id
-        image = image.substring(1,image.length())
-        image = image.substring(0,image.length()-1);
+        String image = params.id
+        image = image.substring(1, image.length())
+        image = image.substring(0, image.length() - 1);
 
 
-        def imagePath = new File("d:/upload/"+ image)
+        def imagePath = new File(grailsApplication.config.uploadFolder + image)
         response.setContentType("application/png")
         response.setContentLength(imagePath.size().toInteger())
         OutputStream out = response.getOutputStream();

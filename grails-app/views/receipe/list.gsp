@@ -33,11 +33,16 @@
 
 <body >
 <div class="nav" role="navigation">
-    <ul><li><g:link class="list" action="list">Document List</g:link></li></ul>
+    <ul>
+        <li><g:link class="list" action="list">List</g:link></li>
+        <li><g:link action="create" class="create">글쓰기</g:link>
+
+        </li>
+    </ul>
 </div>
 
 <div class="content scaffold-list" role="main">
-    <a href="/receipe/create">글쓰기</a>
+
     <table border="1" width="1500px" class="table Poppins">
         <g:each in="${arrList}" var="receipeOne">
             <tr>

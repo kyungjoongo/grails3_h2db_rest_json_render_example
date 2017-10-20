@@ -4,4 +4,6 @@ class Test {
 
     static constraints = {
     }
+
+
 }

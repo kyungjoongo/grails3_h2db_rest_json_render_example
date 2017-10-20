@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-
-
     <asset:javascript src="jquery-2.2.0.min.js"></asset:javascript>
     <asset:javascript src="lightbox/jquery.magnific-popup.js"></asset:javascript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -42,7 +40,15 @@
             <a class="navbar-brand" href="/#">
                 <i class="fa grails-icon">
                     <asset:image src="coffeecup.png"/>
-                </i> Grails
+                </i>
+
+                <g:if test="${session.user}">
+                    logged user : ${session.user}
+
+                    <a href="/user/logout">logout</a>
+
+                </g:if>
+
             </a>
         </div>
 
