@@ -1,7 +1,5 @@
 package grails001
 
-import org.springframework.web.multipart.MultipartFile
-
 class Receipe {
 
 
@@ -10,6 +8,8 @@ class Receipe {
     String image
     String url
     Date create_dt=new Date()
+    Boolean useYn = Boolean.TRUE
+
 
     static constraints = {
         title(maxSize: 100)
@@ -17,6 +17,7 @@ class Receipe {
         image(nullable: true)
         url(nullable: true)
         create_dt(nullable: true)
+
     }
     static mapping = {
         version false

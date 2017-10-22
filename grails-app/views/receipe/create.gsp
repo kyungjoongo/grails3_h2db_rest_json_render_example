@@ -6,7 +6,7 @@
     <title>Upload New Document</title>
 </head>
 
-<body >
+<body>
 <div class="nav" role="navigation">
     <ul><li><g:link class="list" style="font-family: 'Hanna'" action="list">레시피 리스트</g:link></li></ul>
 </div>
@@ -16,14 +16,17 @@
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
-    <g:uploadForm action="upload">
+
+
+
+<g:form action="upload" method="post" enctype='multipart/form-data'>
         <table class="table Poppins">
             <tr>
                 <td>
                     file:
                 </td>
                 <td>
-                    <input type="file" name="file"/>
+                    <input type="file" name="file" />
                 </td>
             </tr>
             <tr>
@@ -65,7 +68,6 @@
         <fieldset class="buttons">
             <g:submitButton name="upload" class="save" value="래시피업로드!!"/>
         </fieldset>
-    </g:uploadForm>
-</div>
+</g:form>
 </body>
 </html>

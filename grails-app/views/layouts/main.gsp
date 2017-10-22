@@ -23,6 +23,10 @@
             crossorigin="anonymous"></script>
 
 
+
+    <asset:javascript src="angularjs.js"></asset:javascript>
+
+
     <g:layoutHead/>
 </head>
 

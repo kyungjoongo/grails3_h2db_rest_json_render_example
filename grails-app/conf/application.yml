@@ -144,6 +144,7 @@ environments:
             url: jdbc:mysql://104.199.239.95:3306/grails001?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
             #url: jdbc:mysql://localhost:3306/grails001
     test:
+        uploadFolder : "d:/upload/"
         dataSource:
             dbCreate: update
             logSql: true
