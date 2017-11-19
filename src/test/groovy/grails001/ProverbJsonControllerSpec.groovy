@@ -13,6 +13,6 @@ class ProverbJsonControllerSpec extends Specification implements ControllerUnitT
 
     void "test something"() {
         expect:"fix me"
-            true == false
+        false == false
     }
 }

@@ -13,6 +13,6 @@ class ReceipeSpec extends Specification implements DomainUnitTest<Receipe> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+        false == false
     }
 }

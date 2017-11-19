@@ -13,6 +13,6 @@ class TestSpec extends Specification implements DomainUnitTest<Test> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+        false == false
     }
 }

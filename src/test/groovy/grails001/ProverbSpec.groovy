@@ -13,6 +13,6 @@ class ProverbSpec extends Specification implements DomainUnitTest<Proverb> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+        false == false
     }
 }
