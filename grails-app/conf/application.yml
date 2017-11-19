@@ -3,6 +3,8 @@
 
 
 grails:
+
+
     controllers:
         upload:
             maxFileSize: 26214400
@@ -41,7 +43,7 @@ endpoints:
     jmx:
         enabled: true
 server:
-  port: 3000
+  port: 8000
 
 
 
