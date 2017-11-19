@@ -16,7 +16,7 @@ buildscript {
 }
 
 version "1.7.0"
-group "proverbs_grails"
+group "grails001"
 
 apply plugin: 'java'                              // standard Java tasks
 apply plugin: 'war'                               // standard Web Archive plugin
@@ -45,7 +45,6 @@ sourceCompatibility = 1.7  // App Engine Standard uses Java 7
 targetCompatibility = 1.7  // App Engine Standard uses Java 7
 
 
-version = '1.0-SNAPSHOT'          // Version in generated output
 
 
 repositories {
