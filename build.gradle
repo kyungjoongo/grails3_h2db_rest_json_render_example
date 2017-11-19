@@ -8,6 +8,8 @@ buildscript {
         }
     }
     dependencies {
+        providedCompile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+        compile 'com.google.appengine:appengine:+'
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "org.grails.plugins:hibernate5:${gormVersion - ".RELEASE"}"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.2"
@@ -18,7 +20,7 @@ buildscript {
 version "1.7.0"
 group "grails001"
 
-apply plugin: 'java'                              // standard Java tasks
+apply plugin: 'java'                                // standard Java tasks
 apply plugin: 'war'                               // standard Web Archive plugin
 apply plugin: 'com.google.cloud.tools.appengine'  // App Engine tasks
 
