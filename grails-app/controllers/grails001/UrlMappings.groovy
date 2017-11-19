@@ -31,5 +31,8 @@ class UrlMappings {
         "/proverbJson/"( controller:"proverbJson", action:"index" )
 
         "/proverbJson/byName/$id?"( controller:"proverbJson", action:"getOneByName" )
+
+
+        "/cars"(resources:"car")
     }
 }
