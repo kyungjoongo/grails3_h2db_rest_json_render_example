@@ -58,6 +58,8 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
+    compile 'org.grails.plugins:rest-awesome:0.2.0'
+    compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
 
 
 }
@@ -72,3 +74,15 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+
+task copyToLib(type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+
+stage.dependsOn(copyToLib)
+
