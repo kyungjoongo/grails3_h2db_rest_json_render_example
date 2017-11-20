@@ -20,11 +20,6 @@ apply plugin: "org.grails.grails-web"
 apply plugin: "asset-pipeline"
 apply plugin: "org.grails.grails-gsp"
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-
-
 repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
@@ -64,9 +59,7 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
     compile 'org.grails.plugins:rest-awesome:0.2.0'
-    compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
-    // https://mvnrepository.com/artifact/org.javassist/javassist
-
+    compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2
 
 
 }
@@ -81,4 +74,3 @@ assets {
     minifyJs = true
     minifyCss = true
 }
-
