@@ -66,7 +66,6 @@ dependencies {
     compile 'org.grails.plugins:rest-awesome:0.2.0'
     compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
     // https://mvnrepository.com/artifact/org.javassist/javassist
-    compile group: 'org.javassist', name: 'javassist', version: '3.15.0-GA'
 
 
 
