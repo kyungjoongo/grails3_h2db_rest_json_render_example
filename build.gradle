@@ -20,8 +20,8 @@ apply plugin: "org.grails.grails-web"
 apply plugin: "asset-pipeline"
 apply plugin: "org.grails.grails-gsp"
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 
 
@@ -65,6 +65,9 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
     compile 'org.grails.plugins:rest-awesome:0.2.0'
     compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
+    // https://mvnrepository.com/artifact/org.javassist/javassist
+    compile group: 'org.javassist', name: 'javassist', version: '3.15.0-GA'
+
 
 
 }

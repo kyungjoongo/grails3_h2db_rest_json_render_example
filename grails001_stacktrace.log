@@ -217,3 +217,10 @@ INFO grails001.Application - The following profiles are active: development
 INFO grails001.Application - Starting Application on DESKTOP-BUQA8A4 with PID 26648 (D:\idea_project\grails3_h2db_rest_json_render_example\build\classes\main started by kyungjoon in D:\idea_project\grails3_h2db_rest_json_render_example)
 INFO grails001.Application - The following profiles are active: development
 INFO grails001.Application - Started Application in 25.655 seconds (JVM running for 28.3)
+INFO grails001.Application - Starting Application on DESKTOP-BUQA8A4 with PID 25236 (D:\idea_project\grails3_h2db_rest_json_render_example\grails001-1.7.0.war started by kyungjoon in D:\idea_project\grails3_h2db_rest_json_render_example)
+INFO grails001.Application - The following profiles are active: production
+INFO grails001.Application - Starting Application on DESKTOP-BUQA8A4 with PID 17468 (D:\idea_project\grails3_h2db_rest_json_render_example\build\classes\main started by kyungjoon in D:\idea_project\grails3_h2db_rest_json_render_example)
+INFO grails001.Application - The following profiles are active: development
+INFO grails001.Application - Started Application in 28.214 seconds (JVM running for 31.896)
+INFO grails001.Application - Starting Application on DESKTOP-BUQA8A4 with PID 27340 (D:\idea_project\grails3_h2db_rest_json_render_example\build\classes\main started by kyungjoon in D:\idea_project\grails3_h2db_rest_json_render_example)
+INFO grails001.Application - The following profiles are active: development
